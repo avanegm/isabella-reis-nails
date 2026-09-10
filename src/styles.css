@@ -1841,3 +1841,33 @@ a {
     font-size: 27px;
   }
 }
+
+/* CTA — botão menor no celular */
+@media (max-width: 560px) {
+  .cta-button {
+    width: 78%;
+    max-width: 260px;
+    min-height: 44px;
+    padding: 0 16px;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .cta-button svg:first-child {
+    width: 17px;
+    height: 17px;
+  }
+
+  .cta-button svg:last-child {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cta-button {
+    width: 82%;
+    max-width: 245px;
+    min-height: 42px;
+  }
+}
