@@ -26,22 +26,6 @@ const gallery = [
 function App() {
   return (
     <div className="site">
-      {/* HEADER */}
-      <header className="header">
-        <a className="brand" href="#top">
-
-        </a>
-
-        <nav>
-          <a href="#top">Início</a>
-          <a href="#trabalhos">Trabalhos</a>
-          <a href="#contato">Contato</a>
-
-          <a className="nav-cta" href={LINKS.booking}>
-            Agendar
-          </a>
-        </nav>
-      </header>
 
       <main id="top">
 
