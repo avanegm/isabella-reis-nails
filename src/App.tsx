@@ -63,12 +63,6 @@ function App() {
               <span>♡</span>
             </div>
 
-            <p className="lead">
-              Mais que unhas, é autoestima
-              <br />
-              em cada detalhe. 
-            </p>
-
             {/* BOTÕES */}
             <div className="actions">
 
