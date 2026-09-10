@@ -1603,3 +1603,121 @@ a {
     font-size: 13px;
   }
 }
+
+/* =========================================================
+   AJUSTE MOBILE FINAL — HERO E ESPAÇAMENTOS
+   ========================================================= */
+
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 105px;
+  }
+
+  .hero h1 {
+    margin-bottom: 14px;
+    font-size: clamp(3.05rem, 14vw, 4.2rem);
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+  }
+
+  /* No celular a frase não sobrepõe o título. */
+  .hero-tagline {
+    position: static;
+    width: 100%;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transform: none;
+    font-size: 17px;
+    line-height: 0.98;
+  }
+
+  .hero-tagline em {
+    font-size: 17px;
+    line-height: 0.98;
+  }
+
+  .hero-tagline span {
+    font-size: 13px;
+  }
+
+  .lead {
+    margin-bottom: 24px;
+  }
+
+  .hero-visual {
+    margin-top: 20px;
+  }
+
+  .service-card {
+    right: 2%;
+    width: 180px;
+    padding: 11px 13px;
+  }
+
+  .service-card div {
+    padding: 9px 0;
+  }
+
+  .service-card span {
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  .works {
+    padding-top: 60px;
+  }
+
+  .section-heading h2 {
+    max-width: 350px;
+    font-size: clamp(2.55rem, 12vw, 3.4rem);
+    line-height: 0.94;
+  }
+
+  .trust {
+    margin-top: 42px;
+  }
+
+  .quote {
+    padding: 28px 22px;
+  }
+
+  .quote p {
+    line-height: 1.55;
+  }
+
+  .cta {
+    min-height: 245px;
+    padding: 34px 20px 28px;
+  }
+
+  .cta .heading-line.light {
+    margin: 9px auto 12px;
+  }
+
+  .cta-button {
+    min-height: 52px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: clamp(2.8rem, 14vw, 3.8rem);
+  }
+
+  .hero-tagline,
+  .hero-tagline em {
+    font-size: 16px;
+  }
+
+  .service-card {
+    width: 170px;
+  }
+
+  .cta {
+    min-height: 240px;
+    padding: 32px 16px 26px;
+  }
+}
