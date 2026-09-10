@@ -1732,3 +1732,40 @@ a {
     padding: 32px 16px 26px;
   }
 }
+
+/* =========================================================
+   TRUST — 3 OPÇÕES EM LINHA NO MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+  .trust {
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .trust .quote {
+    grid-column: 1 / -1;
+  }
+
+  .trust-item {
+    min-height: 105px;
+    padding: 20px 8px;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .trust-item + .trust-item {
+    border-left: 1px solid var(--line);
+  }
+
+  .trust-item svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .trust-item span {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+}
