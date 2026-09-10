@@ -117,20 +117,6 @@ function App() {
 
             </div>
 
-            {/* LOCALIZAÇÃO */}
-            <div className="location">
-              <MapPin size={16} />
-
-              <span>
-                Sorocaba · SP
-              </span>
-            </div>
-
-            {/* ASSINATURA */}
-            <p className="signature-line">
-              Você é seu maior projeto. ♡
-            </p>
-
           </div>
 
 
