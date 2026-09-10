@@ -73,6 +73,7 @@ a {
 ========================================================= */
 
 .header {
+  display: none;
   position: absolute;
   inset: 0 0 auto;
 
@@ -172,7 +173,7 @@ a {
   min-height: 720px;
 
   padding:
-    110px clamp(24px, 6vw, 80px) 0;
+    60px clamp(24px, 6vw, 80px) 0;
 
   gap: clamp(20px, 3vw, 60px);
 
@@ -1605,22 +1606,33 @@ a {
 }
 
 /* =========================================================
-   AJUSTE MOBILE FINAL — HERO E ESPAÇAMENTOS
+   AJUSTES FINAIS — SEM HEADER + MOBILE
    ========================================================= */
 
-@media (max-width: 560px) {
+/* Header removido do layout */
+.header {
+  display: none;
+}
+
+/* Sem o header, o hero pode começar mais acima */
+.hero {
+  padding-top: 60px;
+}
+
+@media (max-width: 900px) {
   .hero {
-    padding-top: 105px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  /* Hero mais próximo do topo */
+  .hero {
+    padding: 38px 20px 0;
   }
 
-  .hero h1 {
-    margin-bottom: 14px;
-    font-size: clamp(3.05rem, 14vw, 4.2rem);
-    line-height: 0.9;
-    letter-spacing: -0.055em;
-  }
-
-  /* No celular a frase não sobrepõe o título. */
+  /* Frase decorativa não invade o título */
   .hero-tagline {
     position: static;
     width: 100%;
@@ -1643,18 +1655,14 @@ a {
     font-size: 13px;
   }
 
-  .lead {
-    margin-bottom: 24px;
-  }
-
-  .hero-visual {
-    margin-top: 20px;
-  }
-
+  /* Card sai da região do rosto */
   .service-card {
+    top: auto;
     right: 2%;
+    bottom: 28px;
     width: 180px;
     padding: 11px 13px;
+    border-radius: 16px;
   }
 
   .service-card div {
@@ -1666,6 +1674,7 @@ a {
     line-height: 1.25;
   }
 
+  /* Trabalhos um pouco mais compactos */
   .works {
     padding-top: 60px;
   }
@@ -1680,14 +1689,7 @@ a {
     margin-top: 42px;
   }
 
-  .quote {
-    padding: 28px 22px;
-  }
-
-  .quote p {
-    line-height: 1.55;
-  }
-
+  /* CTA mantém a composição que já ficou boa */
   .cta {
     min-height: 245px;
     padding: 34px 20px 28px;
@@ -1703,6 +1705,11 @@ a {
 }
 
 @media (max-width: 380px) {
+
+  .hero {
+    padding-top: 34px;
+  }
+
   .hero h1 {
     font-size: clamp(2.8rem, 14vw, 3.8rem);
   }
@@ -1712,8 +1719,12 @@ a {
     font-size: 16px;
   }
 
+  /* Card continua abaixo, sem cobrir o rosto */
   .service-card {
-    width: 170px;
+    top: auto;
+    right: 0;
+    bottom: 24px;
+    width: 165px;
   }
 
   .cta {
