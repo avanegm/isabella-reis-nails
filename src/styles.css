@@ -1871,3 +1871,203 @@ a {
     min-height: 42px;
   }
 }
+
+/* =========================================================
+   AJUSTES FINAIS — TRUST + CTA + FOOTER MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  /* ---------------------------------------------------------
+     1. CARACTERÍSTICAS — 3 COLUNAS MAIS EQUILIBRADAS
+     --------------------------------------------------------- */
+
+  .trust {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 34px;
+  }
+
+  .trust-item {
+    min-height: 92px;
+    padding: 18px 7px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .trust-item + .trust-item {
+    border-left: 1px solid var(--line);
+  }
+
+  .trust-item svg {
+    width: 23px;
+    height: 23px;
+    margin-bottom: 10px;
+  }
+
+  .trust-item span {
+    font-size: 10px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  /*
+   * Diminui o espaço vazio depois das características
+   * antes da CTA.
+   */
+  .works {
+    padding-bottom: 30px;
+  }
+
+
+  /* ---------------------------------------------------------
+     2. CTA — FRASE COMPLETA + BOTÃO MENOR
+     --------------------------------------------------------- */
+
+  .cta {
+    min-height: 270px;
+    padding: 34px 20px 38px;
+  }
+
+  /*
+   * Mantém a frase inteira dentro da CTA.
+   */
+  .cta::before {
+    content: "Você é\A incrível. ♥";
+    white-space: pre;
+
+    left: 4%;
+    bottom: 9px;
+
+    font-size: 29px;
+    line-height: 0.9;
+    transform: rotate(-7deg);
+
+    color: rgba(198, 48, 166, 0.42);
+  }
+
+  .cta h2 {
+    max-width: 340px;
+  }
+
+  .cta .heading-line.light {
+    margin: 9px auto 10px;
+  }
+
+  /*
+   * Botão menor.
+   */
+  .cta-button {
+    width: 72%;
+    max-width: 245px;
+    min-height: 42px;
+
+    padding: 0 14px;
+    gap: 9px;
+
+    font-size: 12px;
+  }
+
+  .cta-button svg:first-child {
+    width: 17px;
+    height: 17px;
+  }
+
+  .cta-button svg:last-child {
+    width: 15px;
+    height: 15px;
+  }
+
+
+  /* ---------------------------------------------------------
+     3. FOOTER — MAIS COMPACTO
+     --------------------------------------------------------- */
+
+  .footer {
+    padding: 26px 20px 22px;
+    gap: 18px;
+  }
+
+  .footer .brand {
+    font-size: 12px;
+  }
+
+  .footer .brand small {
+    font-size: 6px;
+  }
+
+  .footer-socials {
+    gap: 16px;
+  }
+
+  .footer-socials a {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-socials svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .footer-socials span {
+    font-size: 12px;
+  }
+
+  .footer > p {
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .trust-item {
+    min-height: 88px;
+    padding: 16px 5px 14px;
+  }
+
+  .trust-item svg {
+    width: 21px;
+    height: 21px;
+    margin-bottom: 8px;
+  }
+
+  .trust-item span {
+    font-size: 9px;
+  }
+
+  .cta {
+    min-height: 260px;
+    padding: 32px 16px 34px;
+  }
+
+  .cta::before {
+    left: 3%;
+    bottom: 8px;
+    font-size: 26px;
+  }
+
+  .cta-button {
+    width: 74%;
+    max-width: 230px;
+    min-height: 40px;
+    font-size: 11px;
+  }
+
+  .footer {
+    padding: 23px 16px 19px;
+    gap: 15px;
+  }
+}
